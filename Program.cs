@@ -27,6 +27,7 @@ namespace GameSnake
             SetBufferSize(ScreenWidth, ScreenHeight);
             CursorVisible = false;
 
+            StartGame();
 
             ReadKey();
         }
