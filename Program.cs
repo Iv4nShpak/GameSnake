@@ -16,8 +16,8 @@ namespace GameSnake
 
         private const ConsoleColor BorderColor = ConsoleColor.Gray;
 
-        private const ConsoleColor HeadColor = ConsoleColor.DarkBlue;
-        private const ConsoleColor BodyColor = ConsoleColor.Cyan;
+        private const ConsoleColor HeadColor = ConsoleColor.DarkRed;
+        private const ConsoleColor BodyColor = ConsoleColor.Red;
 
         private const int FrameMs = 200;
 
