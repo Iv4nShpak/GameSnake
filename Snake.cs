@@ -26,13 +26,14 @@ namespace GameSnake
 
         public Queue<Pixel> Body { get; } = new Queue<Pixel>();
 
-        public void Move(Direction direction)
+        public void Move(Direction direction, bool eat = false)
         {
             Clear();
 
             Body.Enqueue(new Pixel(Head.X, Head.Y, _bodyColor));
 
-            Body.Dequeue();
+            if(!eat)
+                Body.Dequeue();
 
             Head = direction switch
             {
